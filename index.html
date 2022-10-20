@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Narciza Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,15 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="body container-fluid">
     <header class="header">
         <nav class="header__nav">
-            <div class="header__des">
-                <h4 class="header__des--h4"><a href="">Descuentos de un 15% con Banco</a></h4>    
+            <div class="header__des h6">
+                <h4 class="header__des--h4 h6"><a href="">Descuentos de un 15% con Banco</a></h4>    
             </div>
             <div class="nav__log">
                 <a href="./index.html">
-                    <img src="./img/10.png" alt="Logo">
+                    <img src="./img/Narciza0.png" alt="Logo">
                 </a>
             </div>
             <div class="nav__opc">
@@ -31,6 +33,35 @@
                     <li><a href="./vistas/nosotros.html"><b>Nosotros</b></a></li>
                     <li><a href="./vistas/contacto.html"><b>Contacto</b></a></li>
                 </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light hamburguer">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Calzado</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Bolsos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
             </div>
             <div class="nav__ico">
                 <ul class="nav__ico--ul">
@@ -42,102 +73,108 @@
             </div>
         </nav>
     </header>
-    <article>
-        <section class="article__sec1">
-            <div class="article__sec1--div">
-                <h1 class="article__sec1--h1">LOVE YOURSELF AS YOU ARE</h1>
-                <h4 class="article__sec1--h4">Women´s are unique, amazing and elegant souls.</h4>
-                <h3 class="article__sec1--h3">Welcome to N A R C I Z A</h3>
-            </div>
-        </section>
-        <section class="article__sec2">
-            <div class="article__sec2--div">
-                <img class="article__sec2--img" src="./img/4111874d1acfb4005d5fa9173a654a50.jpg" alt="pronew">
-            </div>
-            <div class="article__sec2--div2">
-                <h4 class="article__sec2--h4">INTRODUCING</h4>
-                <h2 class="article__sec2--g2">ARAB 2022</h2>
-                <button class="article__sec2--butt">SHOP NOW</button>
-            </div>
-        </section>
-        <section class="article__sec3">
-            <div class="article__sec3--div">
-                <h2 class="article__sec3--h2">NEW ARRIVALS</h2>
-            </div>
-            <div class="article__sec3--div2">
-                <div class="article__sec3--div2a">
-                    <img class="article__sec3--img" src="./img/24b464f0898f3247f5c58057943360c3.jpg" alt="pro1">
-                    <div>
-                        <h3 class="article__sec3--h3">Rosa</h4>
-                        <p class="article__sec3--p">$ 4240</p>
+    <article class="main">
+        <section class="main__sec">
+            <section class="article__sec1 h6">
+                <div class="article__sec1--div">
+                    <h1 class="article__sec1--h1 h6">LOVE YOURSELF AS YOU ARE</h1>
+                    <h4 class="article__sec1--h4 h6">Women´s are unique, amazing and elegant souls.</h4>
+                    <h3 class="article__sec1--h3 h6">Welcome to N A R C I Z A</h3>
+                </div>
+            </section>
+            <section class="article__sec2">
+                <div class="article__sec2--div">
+                    <img class="article__sec2--img" src="./img/4111874d1acfb4005d5fa9173a654a50.jpg" alt="pronew">
+                </div>
+                <div class="article__sec2--div2">
+                    <h4 class="article__sec2--h4">INTRODUCING</h4>
+                    <h2 class="article__sec2--g2">ARAB 2022</h2>
+                    <button class="article__sec2--butt">SHOP NOW</button>
+                </div>
+            </section>
+            <section class="article__sec3">
+                <div class="article__sec3--div">
+                    <h2 class="article__sec3--h2">NEW ARRIVALS</h2>
+                </div>
+                <div class="article__sec3--div2">
+                    <div class="article__sec3--div2a">
+                        <img class="article__sec3--img" src="./img/24b464f0898f3247f5c58057943360c3.jpg" alt="pro1">
+                        <div>
+                            <h3 class="article__sec3--h3">Rosa</h4>
+                            <p class="article__sec3--p">$ 4240</p>
+                        </div>
+                    </div>
+                    <div class="article__sec3--div2a">
+                        <img class="article__sec3--img" src="./img/88b4bccc344cc7a61fbf6819f096dca0.jpg" alt="pro2">
+                        <div>
+                            <h3 class="article__sec3--h3">Negro</h4>
+                            <p class="article__sec3--p">$ 4240</p>
+                        </div>
+                    </div>
+                    <div class="article__sec3--div2a">
+                        <img class="article__sec3--img" src="./img/66d5a96dae2b5266d6ca9705b97ae84c.jpg" alt="pro3">
+                        <div>
+                            <h3 class="article__sec3--h3">Marron</h4>
+                            <p class="article__sec3--p">$ 4240</p>
+                        </div>
+                    </div>
+                    <div class="article__sec3--div2a">
+                        <img class="article__sec3--img" src="./img/b34d99f994ac94d82215da7bb0a65d18.jpg" alt="pro4">
+                        <div>
+                            <h3 class="article__sec3--h3">Beige</h4>
+                            <p class="article__sec3--p">$ 4240</p>
+                        </div>
                     </div>
                 </div>
-                <div class="article__sec3--div2a">
-                    <img class="article__sec3--img" src="./img/88b4bccc344cc7a61fbf6819f096dca0.jpg" alt="pro2">
+            </section>
+            <section class="article__sec4">
+                <div class="article__sec4--div">
+                    <img class="article__sec4--img" src="./img/5f087847d62e0d58e98fbe151cbbb0c89.jpg" alt="fot1">
                     <div>
-                        <h3 class="article__sec3--h3">Negro</h4>
-                        <p class="article__sec3--p">$ 4240</p>
+                        <h2 class="article__sec4--h2">PERFECT PAIR</h2>
+                        <button class="article__sec2--but">SHOP NOW</button>
                     </div>
                 </div>
-                <div class="article__sec3--div2a">
-                    <img class="article__sec3--img" src="./img/66d5a96dae2b5266d6ca9705b97ae84c.jpg" alt="pro3">
+                <div class="article__sec4--div">
+                    <img class="article__sec4--img" src="./img/892da140c68d850f8890045550de674d9.jpg" alt="fot2">
                     <div>
-                        <h3 class="article__sec3--h3">Marron</h4>
-                        <p class="article__sec3--p">$ 4240</p>
+                        <h2 class="article__sec4--h2">FUTURE CLASSICS</h2>
+                        <button class="article__sec2--but">SHOP NOW</button>
                     </div>
                 </div>
-                <div class="article__sec3--div2a">
-                    <img class="article__sec3--img" src="./img/b34d99f994ac94d82215da7bb0a65d18.jpg" alt="pro4">
+                <div class="article__sec4--div">
+                    <img class="article__sec4--img" src="./img/bde5e854f03723072ce39f619e05be59.jpg" alt="fot3">
                     <div>
-                        <h3 class="article__sec3--h3">Beige</h4>
-                        <p class="article__sec3--p">$ 4240</p>
+                        <h2 class="article__sec4--h2">REBOOT READY</h2>
+                        <button class="article__sec2--but">SHOP NOW</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="article__sec4">
-            <div class="article__sec4--div">
-                <img class="article__sec4--img" src="./img/5f087847d62e0d58e98fbe151cbbb0c89.jpg" alt="fot1">
-                <div>
-                    <h2 class="article__sec4--h2">PERFECT PAIR</h2>
-                    <button class="article__sec2--but">SHOP NOW</button>
-                </div>
-            </div>
-            <div class="article__sec4--div">
-                <img class="article__sec4--img" src="./img/892da140c68d850f8890045550de674d9.jpg" alt="fot2">
-                <div>
-                    <h2 class="article__sec4--h2">FUTURE CLASSICS</h2>
-                    <button class="article__sec2--but">SHOP NOW</button>
-                </div>
-            </div>
-            <div class="article__sec4--div">
-                <img class="article__sec4--img" src="./img/bde5e854f03723072ce39f619e05be59.jpg" alt="fot3">
-                <div>
-                    <h2 class="article__sec4--h2">REBOOT READY</h2>
-                    <button class="article__sec2--but">SHOP NOW</button>
-                </div>
-            </div>
+            </section>
         </section>
     </article>
     <footer class="footer">
         <div class="footer__div">
-			<h1 class="footer__div--h1"><u>CONTACTO</u></h1>
-			<p class="footer__div1--p">- Dirección: José Martí 8018</p>
-			<p class="footer__div1--p">- Telefono: 091268018</p>
-			<p class="footer__div1--p">- Email: juanigarciaanza95@gmail.com</p>
-			<p class="footer__div1--p">- Horario de atención: De 8:00hs a 17:00hs.</p>
+			<h1 class="footer__div--h1 h6"><u>CONTACTO</u></h1>
+			<p class="footer__div1--p h6">- Dirección: José Martí 8018</p>
+			<p class="footer__div1--p h6">- Telefono: 091268018</p>
+			<p class="footer__div1--p h6">- Email: juanigarciaanza95@gmail.com</p>
+			<p class="footer__div1--p h6">- Horario de atención: De 8:00hs a 17:00hs.</p>
         </div>
 		<div class="footer__div2"> 
-			<h4 class="footer__div2--h4">Nombre o Empresa</h4>
+			<h4 class="footer__div2--h4 h6">Nombre o Empresa</h4>
 			<input class="footer__div2--input" type="text" name="">
-			<h4 class="footer__div2--h4">Email</h4>
+			<h4 class="footer__div2--h4 h6">Email</h4>
 			<input class="footer__div2--input" type="email" name="">
-			<h4 class="footer__div2--h4">Telefono</h4>
+			<h4 class="footer__div2--h4 h6">Telefono</h4>
 			<input class="footer__div2--input" type="number" name="">
-			<h4 class="footer__div2--h4">Mensaje</h4>
+			<h4 class="footer__div2--h4 h6">Mensaje</h4>
 			<input class="footer__div2--input1" type="text" name="">
 			<input class="footer__div2--input2" type="submit" name="">
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>
