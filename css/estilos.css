@@ -53,7 +53,7 @@ body.body.container-fluid, .nopadding, .row>* {
 .nav__log {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 26px;
 }
 
 nav div img {
@@ -297,6 +297,10 @@ div ul li i {
     margin-bottom: 40px;
 }
 
+.footer {
+    background-image: linear-gradient(to right, black, white)
+}
+
 .footer__div {
     padding-left: 30%;
 }
@@ -374,6 +378,10 @@ div ul li i {
     font-size: 23px;
     letter-spacing: 2px;
     font-weight: lighter;
+}
+
+.secont {
+    padding-top: 40px;
 }
 
 .sec1__h4 {
@@ -638,7 +646,7 @@ div ul li i {
 
 /* GRID Contacto */
 
-/*.header__nav {
+.header__nav {
     height: 200px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -697,7 +705,7 @@ div ul li i {
 
 .footercont {
     grid-area: footer__div2;
-}*/
+}
 
 /*TAMAÑO TABLET */ 
 /*@media screen and (max-width: 1134px) 768-1023/24 {*/
