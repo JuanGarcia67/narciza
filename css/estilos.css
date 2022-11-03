@@ -56,7 +56,7 @@ body.body.container-fluid, .nopadding, .row>* {
     margin-top: 26px;
 }
 
-nav div img {
+.divimgN {
     width: auto;
     height: 120px;
     margin: 0;
@@ -473,7 +473,6 @@ div ul li i {
     padding: 5px 10px 10px 0px;
     font-size: 15px;
 }
-
 
 .arti__sec4 {
     width: 100%;
