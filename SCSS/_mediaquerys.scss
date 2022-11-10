@@ -1,0 +1,280 @@
+
+/*TAMAÑO TABLET */ 
+/*@media screen and (max-width: 1134px) 768-1023/24 {*/
+
+    @media screen and (max-width: 1238px) {
+        .body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.44fr 4.6fr 1.1fr;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+            .header {
+                grid-area: header;
+            }
+        
+            .main {
+                grid-area: main;
+            }
+        
+            .footer {
+                grid-area: footer;
+            }
+        }
+        .header__nav {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.6fr 1.5fr 1fr;
+            grid-template-areas: 
+            "header__des header__des"
+            "nav__log nav__log"
+            "nav__opc nav__ico";
+            .header__des {
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .nav__log {
+                margin: 0%;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .nav__opc {
+                margin: 0%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .nav__ico {
+                margin: 0%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                padding-left: 12px;
+            }    
+        }
+        .main__sec {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 0.8fr 0.3fr 0.6fr 0.8;
+            grid-template-areas:
+            "article__sec1 article__sec1"
+            "article__sec2--div article__sec2--div2"
+            "article__sec3--div article__sec3--div"
+            "article__sec3--div2 article__sec3--div2"
+            "article__sec4 article__sec4";
+            .article__sec1 {
+                grid-area: article__sec1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .article__sec2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .article__sec2--div {
+                grid-area: article__sec2--div;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .article__sec2--div2 {
+                grid-area: article__sec2--div2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .article__sec3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+        
+            .article__sec3--div {
+                grid-area: article__sec3--div;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+        
+            .article__sec3--div2 {
+                grid-area: article__sec3--div2;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
+        
+            .article__sec4 {
+                grid-area: article__sec4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top: 150px;
+            }
+        }
+    } 
+    
+    /*TAMAÑO CELULAR*/ 
+    
+    @media screen and (max-width: 480px) {
+        .body {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.48fr 4.4fr 1.1fr;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+            .header {
+                grid-area: header;
+                position: relative;
+            }
+            
+            .main {
+                grid-area: main;
+            }
+            
+            .footer {
+                grid-area: footer;
+            }
+            .hamburguer {
+                display: block;
+                position: absolute;
+                left: 40px;
+                top: 180px;
+            }
+        }
+        .header__nav {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 5fr 1.5fr;
+            grid-template-areas: 
+            "header__des header__des"
+            "nav__log nav__log"
+            "nav__opc nav__ico";
+            .nav__opc--ul {
+                display: none;
+            }
+            .header__des {
+                grid-area: header__des;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav__log {
+                grid-area: nav__log;
+                margin: 0%;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav__opc {
+                grid-area: nav__opc;
+                margin: 0%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav__ico {
+                grid-area: nav__ico;
+                margin: 0%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                padding-right: 20px;
+            }   
+        }
+        .main__sec {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 0.8fr 0.3fr 0.6fr 0.8;
+            grid-template-areas:
+            "article__sec1 article__sec1"
+            "article__sec2--div article__sec2--div2"
+            "article__sec3--div article__sec3--div"
+            "article__sec3--div2 article__sec3--div2"
+            "article__sec4 article__sec4";
+            .article__sec1 {
+                grid-area: article__sec1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .article__sec2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .article__sec2--div {
+                grid-area: article__sec2--div;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .article__sec2--div2 {
+                grid-area: article__sec2--div2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .article__sec3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+            .article__sec3--div {
+                grid-area: article__sec3--div;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+            .article__sec3--div2 {
+                grid-area: article__sec3--div2;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
+            .article__sec4 {
+                grid-area: article__sec4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top: 150px;
+            }
+        }
+    }
+    
+    
