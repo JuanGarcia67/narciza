@@ -1,11 +1,10 @@
-@import "productos.scss";
-@import "nosotros.scss";
-@import "contacto.scss";
-
 /*VARIABLES*/
 $colorLetraFooter: white;
 $fuenteIndex: 20px;
 
+@import "productos.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
 
 *, ul, ol {
     font-family: Sen, sans-serif;
