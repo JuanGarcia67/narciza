@@ -1,9 +1,16 @@
-@import "pseudoclases.scss";
+@import "productos.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+
+/*VARIABLES*/
+$colorLetraFooter: white;
+$fuenteIndex: 20px;
+
 
 *, ul, ol {
-	font-family: Sen, sans-serif;
-	font-weight: 100; 
-	margin: 0;
+    font-family: Sen, sans-serif;
+    font-weight: 100; 
+    margin: 0;
     padding: 0;
     padding-left: 0;
     padding-right: 0;
@@ -214,7 +221,7 @@ div ul li {
         text-decoration: underline;
         font-family: myFont, sans-serif;
         letter-spacing: 4px;
-        font-size: 20px;
+        font-size: $fuenteIndex;
     }
 
     .article__sec3--div2 {
@@ -264,7 +271,7 @@ div ul li {
         .article__sec4--h2 {
             margin-top: 20px;
             font-family: myFont, sans-serif;
-            font-size: 20px;
+            font-size: $fuenteIndex;
         }
         .article__sec2--but {
             border-radius: 5px;
@@ -284,19 +291,18 @@ div ul li {
     }
 }
 
-
 .footer {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $colorLetraFooter;
     height: 550px;
     margin-bottom: 40px;
     background-image: linear-gradient(to right, black, white);
+    gap: 300px;
     .footer__div {
-        padding-left: 30%;
-    }
+        padding-left: 200px;
         .footer__div--h2 {
             text-decoration: underline;
             padding-bottom: 50px;
@@ -305,10 +311,9 @@ div ul li {
             padding-bottom: 30px;
             font-size: 15px;
         }
+    }
     .footer__div2 {
         font-size: 15px;
-        padding-left: 10%;
-    }
         .footer__div2--h4 {
             margin-top: 10px;
             margin-bottom: 5px;
@@ -346,6 +351,106 @@ div ul li {
             height: 200px;
             border-radius: 5px;
         }
+    }
+}
+
+/* GRID INDEX */
+
+.header__nav {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "header__des header__des header__des"
+    "nav__log . ."
+    "nav__log nav__opc nav__ico";
+    .header__des {
+        grid-area: header__des;
+    }
+    .nav__opc {
+        grid-area: nav__opc;
+    }
+    .nav__ico {
+        grid-area: nav__ico;
+    }
+    
+    .nav__log {
+        grid-area: nav__log;
+    }
+}
+
+.article__sec1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "index__article1";
+    .article__sec1--div {
+        grid-area: index__article1;
+    }
+}
+
+.article__sec2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "article__sec2--div  article__sec2--div2";
+    .article__sec2 {
+        grid-area: article__sec2--div;
+    }
+    
+    .article__sec2 {
+        grid-area: article__sec2--div2;
+    }
+}
+
+.article__sec3 {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "article__sec3--div article__sec3--div2";
+    .article__sec3 { 
+        grid-area: article__sec3--div;
+    }
+    .article__sec3 { 
+        grid-area: article__sec3--div2;
+    }
+}
+
+
+.article__sec4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "article__sec4--div article__sec4--div article__sec4--div";
+    .article__sec4 { 
+        grid-area: article__sec4--div;
+    }
+    .article__sec4 { 
+        grid-area: article__sec4--div2;
+    }
+    .article__sec4 { 
+        grid-area: article__sec4--div;
+    } 
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "footer__div  footer__div2";
+    .footer {
+        grid-area: footer__div;
+    }
+    .footer {
+        grid-area: footer__div2;
+    }
 }
 
 @import "mediaquerys.scss";

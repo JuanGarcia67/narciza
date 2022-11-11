@@ -1,0 +1,56 @@
+/* GRID Contacto */
+
+.header__nav {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "header__des header__des header__des"
+    "nav__log . ."
+    "nav__log nav__opc nav__ico";
+    .header__des {
+        grid-area: header__des;
+    }
+    .nav__opc {
+        grid-area: nav__opc;
+    }
+    .nav__ico {
+        grid-area: nav__ico;
+    }
+    .nav__log {
+        grid-area: nav__log;
+    }
+}
+
+.sec1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr;
+    grid-template-areas: 
+    "sec1__div";
+    height: 250px;
+    .sec1 {
+        grid-area: sec1__div;
+    }
+    
+}
+
+.footercont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "footer__div footer__div2";
+    height: 800px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    .footercont {
+        grid-area: footer__div;
+    }
+    .footercont {
+        grid-area: footer__div2;
+    }
+}
