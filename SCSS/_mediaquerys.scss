@@ -143,7 +143,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.48fr 4.4fr 1.1fr;
+        grid-template-rows: 1fr 10fr 2fr;
         grid-template-areas: 
         "header"
         "main"
@@ -159,6 +159,16 @@
         
         .footer {
             grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .footer_div {
+                padding-left: 0px;
+            }
+            .footer_div2 {
+                padding-left: 0px;
+            }
         }
         .hamburguer {
             display: block;
@@ -169,7 +179,7 @@
     }
     .header__nav {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 5fr 1.5fr;
+        grid-template-rows: 1fr 3fr 1.5fr;
         grid-template-areas: 
         "header__des header__des"
         "nav__log nav__log"
@@ -213,7 +223,7 @@
     }
     .main__sec {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.8fr 0.3fr 0.6fr 0.8;
+        grid-template-rows: 2fr 0.8fr 0.3fr 8fr 2fr;
         grid-template-areas:
         "article__sec1 article__sec1"
         "article__sec2--div article__sec2--div2"
@@ -228,21 +238,25 @@
         }
         .article__sec2 {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-left: 0px;
         }
         .article__sec2--div {
             grid-area: article__sec2--div;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: none;
         }
         .article__sec2--div2 {
             grid-area: article__sec2--div2;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 30px;
+            margin-left: none;
         }
         .article__sec3 {
             display: flex;
@@ -261,7 +275,7 @@
         .article__sec3--div2 {
             grid-area: article__sec3--div2;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             gap: 10px;
@@ -269,7 +283,7 @@
         .article__sec4 {
             grid-area: article__sec4;
             display: flex;
-            justify-content: center;
+            justify-content: column;
             align-items: center;
             gap: 10px;
             margin-top: 150px;
@@ -280,7 +294,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
-    }
+        .footer_div {
+            padding-left: 0px;
+        }
+        .footer_div2 {
+            padding-left: 0px;
+        }
+    } 
 }
+
+
 

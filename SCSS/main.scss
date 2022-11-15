@@ -293,14 +293,18 @@ div ul li {
 .footer {
     background-color: black;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     color: $colorLetraFooter;
-    height: 550px;
+    min-height: 550px;
     margin-bottom: 40px;
     background-image: linear-gradient(to right, black, white);
-    gap: 300px;
     .footer__div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         padding-left: 200px;
         .footer__div--h2 {
             text-decoration: underline;
@@ -313,6 +317,7 @@ div ul li {
     }
     .footer__div2 {
         font-size: 15px;
+        padding-left: 200px;
         .footer__div2--h4 {
             margin-top: 10px;
             margin-bottom: 5px;

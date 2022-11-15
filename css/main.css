@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*VARIABLES*/
+/*VARIABLES*/
 .sec1 {
   width: 100%;
   height: 150px;
@@ -208,7 +209,6 @@
   .footercont .footercont {
     grid-area: footer__div2; }
 
-/*VARIABLES*/
 *, ul, ol {
   font-family: Sen, sans-serif;
   font-weight: 100;
@@ -437,14 +437,18 @@ div ul li {
 .footer {
   background-color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   color: white;
-  height: 550px;
+  min-height: 550px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to right, black, white);
-  gap: 300px; }
+  background-image: linear-gradient(to right, black, white); }
   .footer .footer__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding-left: 200px; }
     .footer .footer__div .footer__div--h2 {
       text-decoration: underline;
@@ -453,7 +457,8 @@ div ul li {
       padding-bottom: 30px;
       font-size: 15px; }
   .footer .footer__div2 {
-    font-size: 15px; }
+    font-size: 15px;
+    padding-left: 200px; }
     .footer .footer__div2 .footer__div2--h4 {
       margin-top: 10px;
       margin-bottom: 5px; }
@@ -652,7 +657,7 @@ div ul li {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.48fr 4.4fr 1.1fr;
+    grid-template-rows: 1fr 10fr 2fr;
     grid-template-areas: "header" "main" "footer"; }
     .body .header {
       grid-area: header;
@@ -660,7 +665,15 @@ div ul li {
     .body .main {
       grid-area: main; }
     .body .footer {
-      grid-area: footer; }
+      grid-area: footer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .body .footer .footer_div {
+        padding-left: 0px; }
+      .body .footer .footer_div2 {
+        padding-left: 0px; }
     .body .hamburguer {
       display: block;
       position: absolute;
@@ -668,7 +681,7 @@ div ul li {
       top: 180px; }
   .header__nav {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr 1.5fr;
+    grid-template-rows: 1fr 3fr 1.5fr;
     grid-template-areas: "header__des header__des" "nav__log nav__log" "nav__opc nav__ico"; }
     .header__nav .nav__opc--ul {
       display: none; }
@@ -703,7 +716,7 @@ div ul li {
       padding-right: 20px; }
   .main__sec {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.8fr 0.3fr 0.6fr 0.8;
+    grid-template-rows: 2fr 0.8fr 0.3fr 8fr 2fr;
     grid-template-areas: "article__sec1 article__sec1" "article__sec2--div article__sec2--div2" "article__sec3--div article__sec3--div" "article__sec3--div2 article__sec3--div2" "article__sec4 article__sec4"; }
     .main__sec .article__sec1 {
       grid-area: article__sec1;
@@ -712,19 +725,23 @@ div ul li {
       align-items: center; }
     .main__sec .article__sec2 {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-left: 0px; }
     .main__sec .article__sec2--div {
       grid-area: article__sec2--div;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-left: none; }
     .main__sec .article__sec2--div2 {
       grid-area: article__sec2--div2;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding-top: 30px;
+      margin-left: none; }
     .main__sec .article__sec3 {
       display: flex;
       flex-direction: column;
@@ -740,14 +757,23 @@ div ul li {
     .main__sec .article__sec3--div2 {
       grid-area: article__sec3--div2;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       gap: 10px; }
     .main__sec .article__sec4 {
       grid-area: article__sec4;
       display: flex;
-      justify-content: center;
+      justify-content: column;
       align-items: center;
       gap: 10px;
-      margin-top: 150px; } }
+      margin-top: 150px; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer_div {
+      padding-left: 0px; }
+    .footer .footer_div2 {
+      padding-left: 0px; } }
