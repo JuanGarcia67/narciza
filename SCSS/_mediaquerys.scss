@@ -159,51 +159,6 @@
             padding: 10px;
         }
     }
-    /*.sec3 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
-        grid-template-areas: 
-        "sec3div sec3div"
-        "sec3div sec3div"
-        "sec3div sec3div";
-        .sec3div {
-            grid-area: sec3div;
-        }
-        .sec3div {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "sec3__div sec3__div"
-            "sec3__div sec3__div"
-            "sec3__div sec3__div";
-            .sec3div__div {
-                grid-area: sec3__div;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        } 
-    }
-    .art__sec4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        article__sec4--div {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            art__sec4--img {
-                height: 100px;
-                width: 100px;
-            }
-            article__sec4--h2 {
-                font-size: 15px;
-            }
-        }
-    }*/
 } 
 
 /*TAMAÑO CELULAR*/ 
@@ -401,52 +356,6 @@
             padding-left: 0px;
         }
     }
-    /*.sec3 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.3fr;
-        grid-template-areas: 
-        "sec3div sec3div"
-        "sec3div sec3div"
-        "sec3div sec3div";
-        .sec3div {
-            grid-area: sec3div;
-        }
-        .sec3div {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "sec3__div sec3__div"
-            "sec3__div sec3__div"
-            "sec3__div sec3__div";
-            .sec3div__div {
-                grid-area: sec3__div;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        } 
-    }
-    .art__sec4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-        article__sec4--div {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            art__sec4--img {
-                height: 50px;
-                width: 50px;
-            }
-            article__sec4--h2 {
-                font-size: 15px;
-            }
-        }
-    }*/ 
 }
 
 
